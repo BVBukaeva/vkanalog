@@ -12,11 +12,5 @@ public class PostManager {
     }
 
     public void delete(int ownerId, int postId) {
-        for (Post post : posts) {
-            if (post.getId() == postId && post.getUserInfo().getId() == ownerId) {
-                posts.remove(post);
-                return;
-            }
-        }
     }
 }
